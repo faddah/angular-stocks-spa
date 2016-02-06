@@ -1,0 +1,41 @@
+{
+	"name": "angular stocks app",
+	"version": "0.0.1",
+	"description": "Stock Market App SPA in AngularJS with data from Google Finance, by Faddah Wolf",
+	"keywords": [
+		"angular",
+		"angularjs",
+		"javascript",
+		"js",
+		"weather",
+		"google finance",
+		"finance.google.com",
+		"single",
+		"page",
+		"application",
+		"spa",
+		"web",
+		"app",
+		"application",
+		"stock",
+		"stocks",
+		"market",
+		"nyse",
+		"nasdaq",
+		"stock market"
+	],
+	"homepage": "https://github.com/faddah/angular-stocks-spa#readme",
+	"bugs": {
+		"url": "https://github.com/faddah/angular-stocks-spa/issues"
+	},
+	"license": "ISC",
+	"author": "Faddah Wolf",
+	"main": "app.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/faddah/angular-stocks-spa.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}

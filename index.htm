@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="stocksApp">
+    <head>
+        <title>AngularJS Stock Market SPA</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <link type="text/stylesheet" src="views/style.css">
+            html, body, select, textarea
+            {
+                font-size: 1.1em !important;
+            }
+            
+            input, textarea, #googleLink
+            {
+              background: light-blue;
+              font-size: 20px;
+            }
+        </style>
+
+        <!-- load angular via CDN -->
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.7/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.7/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.7/angular-resource.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+        <script src="routes.js"></script>
+        <script src="services.js"></script>
+        <script src="controllers.js"></script>
+        <script src="directives/directives.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="https://angularjs.org/" title="The AngularJS JavaScript SuperHeroic Framework Main Web Site." target="_blank">AngularJS</a> <a href="http://finance.google.com/" title="Google Finance Web Site." target="_blank"><span id="googleLink">Google Finance</span></a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#/stocks"><i class="fa fa-home"></i> Stocks</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+      <div class="container">
+
+        <div ng-view></div>
+
+		  </div>
+
+    </body>
+</html>
