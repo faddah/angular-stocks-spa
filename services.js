@@ -8,9 +8,12 @@ stocksApp.service('stocksService', function() {
     stock02: 'MSFT',
     stock03: 'AAPL',
     stock04: 'YHOO',
-    stock05: 'ROP',
-    stock06: 'OPGSX',
-    stock07: 'FLCSX'
+    stock05: 'TSLA',
+    stock06: 'TWTR',
+    stock07: 'FB',
+    stock08: 'ROP',
+    stock09: 'OPGSX',
+    stock10: 'FLCSX'
   };
 });
 

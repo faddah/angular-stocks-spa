@@ -5,16 +5,16 @@ stocksApp.config(function($routeProvider) {
   $routeProvider
 
   .when('/', {
-    templateUrl: 'pages/home.htm',
+    templateUrl: 'views/home.htm',
     controller: 'homeController'
   })
-  .when('/forecast', {
-    templateUrl: 'pages/forecast.htm',
-    controller: 'forecastController'
+  .when('/stocks', {
+    templateUrl: 'views/stocks.htm',
+    controller: 'stocksController'
   })
-  .when('/forecast/:days', {
-    templateUrl: 'pages/forecast.htm',
-    controller: 'forecastController'
+  .when('/stocks/:days', {
+    templateUrl: 'views/stocks.htm',
+    controller: 'stocksController'
   });
 
 });

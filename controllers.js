@@ -8,23 +8,13 @@ stocksApp.controller('homeController', ['$scope', '$log', '$routeParams', '$loca
     cityService.city = $scope.city;
   });
 
-/* * * Former method to go to forecast.htm template from home.htm after submitting city. now being handled by $scope.submit() function,
-need to add $window service to controller injected dependencies if you use this, otherwise use $location with $scope.submit instead.
-  $scope.goToForecast = function() {
-    // $location.path('#/forecast');
-    // $location.replace();
-    $window.location.href = '#/forecast';
-  };
-
-  * * * * * * * * * */
-
   $scope.submit = function() {
-    $location.path("/forecast");
+    $location.path("/stocks");
   };
 
 }]);
 
-stocksApp.controller('forecastController', ['$scope', '$log', '$routeParams', 'cityService', 'weatherService', function($scope, $log, $routeParams, cityService, weatherService) {
+stocksApp.controller('stocksController', ['$scope', '$log', '$routeParams', 'cityService', 'weatherService', function($scope, $log, $routeParams, cityService, weatherService) {
 
   $scope.city = cityService.city;
 
