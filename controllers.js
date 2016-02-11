@@ -1,45 +1,46 @@
 // CONTROLLERS
+angular.module('stocksApp', ['ngRoute', 'ngResource'])
 
-stocksApp.controller('homeController', ['$scope', '$log', '$routeParams', '$location', 'cityService', function($scope, $log, $routeParams, $location, cityService) {
+  .controller('homeController', ['$scope', '$log', '$routeParams', '$location', 'cityService', function($scope, $log, $routeParams, $location, cityService) {
 
-  $scope.city = cityService.city;
+    $scope.city = cityService.city;
 
-  $scope.$watch('city', function() {
-    cityService.city = $scope.city;
-  });
+    $scope.$watch('city', function() {
+      cityService.city = $scope.city;
+    });
 
-  $scope.submit = function() {
-    $location.path("/stocks");
-  };
+    $scope.submit = function() {
+      $location.path("/stocks");
+    };
 
-}]);
+  }])
 
-stocksApp.controller('stocksController', ['$scope', '$log', '$routeParams', 'cityService', 'weatherService', function($scope, $log, $routeParams, cityService, weatherService) {
+  .controller('stocksController', ['$scope', '$log', '$routeParams', 'cityService', 'weatherService', function($scope, $log, $routeParams, cityService, weatherService) {
 
-  $scope.city = cityService.city;
+    $scope.city = cityService.city;
 
-  $scope.days = $routeParams.days || '1';
+    $scope.days = $routeParams.days || '1';
 
-  $scope.weatherResult = weatherService.GetWeather($scope.city, $scope.days);
+    $scope.weatherResult = weatherService.GetWeather($scope.city, $scope.days);
 
-  // $log.info($scope.weatherResult);
-/* * * * * * * * */
-  $scope.convertToFarenheit = function(degK) {
+    // $log.info($scope.weatherResult);
+  /* * * * * * * * */
+    $scope.convertToFarenheit = function(degK) {
 
-    return Math.round((degK* 1.8) - 459.67);
+      return Math.round((degK* 1.8) - 459.67);
 
-  };
+    };
 
-  $scope.convertToCelsius = function(degK) {
+    $scope.convertToCelsius = function(degK) {
 
-    return Math.round(degK - 273.15);
+      return Math.round(degK - 273.15);
 
-  };
+    };
 
-  $scope.convertToDate = function(dt) {
+    $scope.convertToDate = function(dt) {
 
-    return new Date(dt * 1000);
+      return new Date(dt * 1000);
 
-  };
+    };
 
 }]);

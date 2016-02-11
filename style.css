@@ -8,13 +8,18 @@ input, textarea {
   font-size: 30px;
 }
 
-.google-link {
-  line-height:  2.7;
-  font-size: 18px ;
+.navbar-brand .google-link a {
+  color: green !important;
+  font-size: 18px !important;
+}
+
+.navbar-brand .google-link a:hover {
+  color: #225234 !important;
+  font-size: 18px !important;
 }
 
 nav ul {
-  height:250px; 
+  height:250px;
   width:40%;
   margin-left: 30%;
   margin-right: 30%;

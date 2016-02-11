@@ -1,34 +1,34 @@
 {
-  "name": "angular-stocks-spa",
-  "version": "0.0.1",
-  "description": "An Angular.JS app that gets Stock Market Quotes for you in Real Time from Google Finance.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faddah/angular-stocks-spa.git"
-  },
-  "keywords": [
-    "angular",
-    "angular.js",
-    "js",
-    "javascript",
-    "spa",
-    "single",
-    "page",
-    "application",
-    "google",
-    "finance",
-    "stock",
-    "market",
-    "quotes"
-  ],
-  "author": "Faddah Wolf",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/faddah/angular-stocks-spa/issues"
-  },
-  "homepage": "https://github.com/faddah/angular-stocks-spa#readme"
+	"name": "angular-stocks-spa",
+	"version": "0.0.1",
+	"description": "An Angular.JS app that gets Stock Market Quotes for you in Real Time from Google Finance.",
+	"keywords": [
+		"angular",
+		"angular.js",
+		"js",
+		"javascript",
+		"spa",
+		"single",
+		"page",
+		"application",
+		"google",
+		"finance",
+		"stock",
+		"market",
+		"quotes"
+	],
+	"homepage": "https://github.com/faddah/angular-stocks-spa#readme",
+	"bugs": {
+		"url": "https://github.com/faddah/angular-stocks-spa/issues"
+	},
+	"license": "ISC",
+	"author": "Faddah Wolf",
+	"main": "app.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/faddah/angular-stocks-spa.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
 }
